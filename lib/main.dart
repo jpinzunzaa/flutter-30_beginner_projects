@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_beginner_projects/screens/restaurant_picker.dart';
+import 'package:flutter_30_beginner_projects/screens/tip_calculator.dart';
 
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: RestaurantPicker(),
+      home: const TipCalculator(),
     );
   }
 }
