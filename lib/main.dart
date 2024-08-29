@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_30_beginner_projects/screens/easy_read.dart';
+import 'package:flutter_30_beginner_projects/screens/flash_cards.dart';
 import 'package:flutter_30_beginner_projects/screens/restaurant_picker.dart';
 import 'package:flutter_30_beginner_projects/screens/tip_calculator.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const EasyRead(),
+      home: const FlashCards(),
     );
   }
 }
