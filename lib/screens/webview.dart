@@ -10,7 +10,7 @@ class WebviewScreen extends StatefulWidget {
 }
 
 class WebviewScreenState extends State<WebviewScreen> {
-  late final WebviewController _controller;
+  late final WebViewController _controller;
 
   @override
   Widget build(BuildContext context) {
@@ -18,18 +18,16 @@ class WebviewScreenState extends State<WebviewScreen> {
       appBar: AppBar(
         title: const Text('Website'),
       ),
-      body: Webview(
-        initialUrl: 'hola.com',
-        onWebViewCreated: (controller) {
-          _controller = controller;
-        }
-      ),bottomNavigationBar: NavigationBar(controller: _controller),
+      body: WebViewWidget(
+        controller: _controller,
+      ),
+      bottomNavigationBar: NavigationBar(controller: _controller),
     );
   }
 }
 
 class NavigationBar extends StatelessWidget {
-  final WebviewController controller;
+  final WebViewController controller;
 
   const NavigationBar({ super.key, required this.controller });
 
