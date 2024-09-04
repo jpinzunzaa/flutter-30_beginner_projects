@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TodoListPage extends StatelessWidget {
+  TodoListPage({ super.key });
   final TextEditingController controller = TextEditingController();
 
   @override
