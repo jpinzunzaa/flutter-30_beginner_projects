@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_30_beginner_projects/screens/list_grids.dart';
+import 'package:flutter_30_beginner_projects/screens/simple_todo.dart';
 
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const ListGrids(),
+      home: const SimpleTodo(),
     );
   }
 }
