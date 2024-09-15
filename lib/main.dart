@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_30_beginner_projects/screens/currency_converter.dart';
+import 'package:flutter_30_beginner_projects/screens/cronometer.dart';
 
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CurrencyConverterScreen(),
+      home: const Cronometer(),
     );
   }
 }
